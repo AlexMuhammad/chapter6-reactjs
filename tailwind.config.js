@@ -17,6 +17,7 @@ export default {
         "bnr-blue": "#0D28A6",
         "bnr-gray": "#F1F3FF",
         "bnr-gold": "#F9CC00",
+        "bnr-dark-gray": "#CFD4ED"
       },
       fontSize: {
         "bnr-xl": "36px",

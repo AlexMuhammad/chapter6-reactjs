@@ -2,8 +2,8 @@ import Button from "./Button/Button"
 
 const Navbar = () => {
     return (
-        <header>
-            <nav className="h-20 max-w-full bg-bnr-gray">
+        <header className="fixed top-0 left-0 z-50 w-full max-w-full">
+            <nav className="w-full h-20 bg-bnr-gray">
                 <div className="container flex items-center justify-between w-full h-full mx-auto px-36">
                     <div>
                         <div className="h-8 w-28 bg-bnr-blue"></div>

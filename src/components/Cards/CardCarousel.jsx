@@ -14,7 +14,7 @@ const CardCarousel = () => {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={2}
                 spaceBetween={30}
                 freeMode={true}
                 pagination={{

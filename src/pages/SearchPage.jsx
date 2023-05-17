@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import CardCars from "../components/Cards/CardCars"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import FormFilterSection from "../components/Section/FormFilterSection"
 import HeroSection from "../components/Section/HeroSection"
 
 /* eslint-disable react/jsx-key */
@@ -19,6 +21,8 @@ const SearchPage = () => {
             ))} */}
             <Navbar />
             <HeroSection />
+            <FormFilterSection />
+            <CardCars />
             <Footer />
         </div>
     )

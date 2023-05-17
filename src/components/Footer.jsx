@@ -2,7 +2,7 @@ import { FiFacebook, FiInstagram, FiTwitter, FiTwitch, FiMail } from "react-icon
 
 const Footer = () => {
     return (
-        <div className="h-full max-w-full">
+        <div className="h-full max-w-full py-10">
             <div className="container w-full h-full mx-auto px-36">
                 <div className="flex justify-between">
                     <div className="space-y-4">

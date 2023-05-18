@@ -1,9 +1,7 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
+import PropTypes from "prop-types"
 import { FiUser, FiSettings, FiCalendar } from "react-icons/fi"
+
 const CardCars = ({ data, filterCar, search }) => {
-    console.log(data);
-    console.log("filter", filterCar)
     return (
         <>
             {!search ? (
@@ -83,6 +81,12 @@ const CardCars = ({ data, filterCar, search }) => {
             )}
         </>
     )
+}
+
+CardCars.propTypes = {
+    search: PropTypes.bool.isRequired,
+    data: PropTypes.array.isRequired,
+    filterCar: PropTypes.array.isRequired
 }
 
 export default CardCars

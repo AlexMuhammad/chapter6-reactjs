@@ -1,19 +1,6 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable no-unused-vars */
-// import { useState } from "react"
-import Button from "../Button/Button"
+import PropTypes from "prop-types"
 import CardCars from "../Cards/CardCars"
-// import {
-//     Select,
-//     SelectContent,
-//     SelectItem,
-//     SelectTrigger,
-//     SelectValue,
-//     SelectGroup,
-//     // SelectLabel
-// } from "@teovilla/shadcn-ui-react-select"
-// import { Select, Option } from "@material-tailwind/react";
+
 const FormFilterInput = ({ valueDateInput, valuePickUpInput, valueCustomerInput, setDateInput, setPickUpInput, setCustomerInput, onFilterHandler, search, filterCar, data }) => {
     return (
         <div className='h-full max-w-full'>
@@ -86,6 +73,19 @@ const FormFilterInput = ({ valueDateInput, valuePickUpInput, valueCustomerInput,
             <CardCars data={data} search={search} filterCar={filterCar} />
         </div >
     )
+}
+
+FormFilterInput.propTypes = {
+    valueDateInput: PropTypes.string,
+    valuePickUpInput: PropTypes.string,
+    valueCustomerInput: PropTypes.string,
+    setCustomerInput: PropTypes.func,
+    setDateInput: PropTypes.func,
+    setPickUpInput: PropTypes.func,
+    onFilterHandler: PropTypes.func,
+    filterCar: PropTypes.array,
+    data: PropTypes.array,
+    search: PropTypes.bool
 }
 
 export default FormFilterInput

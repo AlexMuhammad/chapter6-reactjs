@@ -1,5 +1,3 @@
-import Button from "./Button/Button"
-
 const Navbar = () => {
     return (
         <header className="fixed top-0 left-0 z-50 w-full max-w-full">
@@ -15,7 +13,7 @@ const Navbar = () => {
                             <li className="text-bnr-sm">Testimoni</li>
                             <li className="text-bnr-sm">FAQ</li>
                             <li>
-                                <Button />
+                                <button className="px-3 py-2 text-white bg-bnr-green text-bnr-sm font-bnr700">Register</button>
                             </li>
                         </ul>
                     </div>
